@@ -123,7 +123,7 @@ void UAbilityBountyObject::GenerateModifiers()
 
 		for (int32 Mod = 0; Mod < ModifierAmount; Mod++)
 		{
-			UGameplayDataAbilityModifier* SelectedModifier = GetGameplayDataSubsystem()->GetRandomValidModifierForAbility(NewModifiedAbility, IgnoredModifiers)
+			UGameplayDataAbilityModifier* SelectedModifier = GetGameplayDataSubsystem()->GetRandomValidModifierForAbility(NewModifiedAbility, IgnoredModifiers);
 			if(!SelectedModifier)
 			{
 				break;
